@@ -6,21 +6,21 @@ function computerPlay(){
 
 
 function gameRound(playerSelection,computerSelection){
-    if(playerSelection==="rock"){
-        if(computerSelection ==="rock") return "tie"
-        else if(computerSelection==="paper") return "computer won"
-        else if(computerSelection==="scissor") return "paper won"
-    }
-    else if(playerSelection==="paper"){
-        if(computerSelection ==="paper") return "tie"
-        else if(computerSelection==="scissor") return "computer won"
-        else if(computerSelection==="rock") return "paper won"
-    }
-    else if(playerSelection==="scissor"){
-        if(computerSelection ==="scissor") return "tie"
-        else if(computerSelection==="rock") return "computer won"
-        else if(computerSelection==="paper") return "paper won"
-    }
+    // if(playerSelection==="rock"){
+    //     if(computerSelection ==="rock") return "tie"
+    //     else if(computerSelection==="paper") return "computer won"
+    //     else if(computerSelection==="scissor") return "paper won"
+    // }
+    // else if(playerSelection==="paper"){
+    //     if(computerSelection ==="paper") return "tie"
+    //     else if(computerSelection==="scissor") return "computer won"
+    //     else if(computerSelection==="rock") return "paper won"
+    // }
+    // else if(playerSelection==="scissor"){
+    //     if(computerSelection ==="scissor") return "tie"
+    //     else if(computerSelection==="rock") return "computer won"
+    //     else if(computerSelection==="paper") return "paper won"
+    // }
     
 }
 
