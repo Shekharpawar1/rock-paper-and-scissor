@@ -21,6 +21,9 @@ function gameRound(playerSelection,computerSelection){
     //     else if(computerSelection==="rock") return "computer won"
     //     else if(computerSelection==="paper") return "paper won"
     // }
+    if(playerSelection==="rock" && computerSelection==="paper" || playerSelection==="paper" && computerSelection==="scissor"|| playerSelection==="scissor" && computerSelection==="rock") return "computer won"
+    else if(playerSelection==="rock" && computerSelection==="scissor" || playerSelection==="paper" && computerSelection==="rock"|| playerSelection==="scissor" && computerSelection==="paper") return "player won"
+    else if(playerSelection=== computerSelection) return "tie"
     
 }
 
