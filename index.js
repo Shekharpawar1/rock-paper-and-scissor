@@ -4,27 +4,13 @@ function computerPlay(){
     return compSelection
 }
 
-
+let playerScore=0;computerScore=0;
 function gameRound(playerSelection,computerSelection){
-    // if(playerSelection==="rock"){
-    //     if(computerSelection ==="rock") return "tie"
-    //     else if(computerSelection==="paper") return "computer won"
-    //     else if(computerSelection==="scissor") return "paper won"
-    // }
-    // else if(playerSelection==="paper"){
-    //     if(computerSelection ==="paper") return "tie"
-    //     else if(computerSelection==="scissor") return "computer won"
-    //     else if(computerSelection==="rock") return "paper won"
-    // }
-    // else if(playerSelection==="scissor"){
-    //     if(computerSelection ==="scissor") return "tie"
-    //     else if(computerSelection==="rock") return "computer won"
-    //     else if(computerSelection==="paper") return "paper won"
-    // }
-    if(playerSelection==="rock" && computerSelection==="paper" || playerSelection==="paper" && computerSelection==="scissor"|| playerSelection==="scissor" && computerSelection==="rock") return "computer won"
-    else if(playerSelection==="rock" && computerSelection==="scissor" || playerSelection==="paper" && computerSelection==="rock"|| playerSelection==="scissor" && computerSelection==="paper") return "player won"
-    else if(playerSelection=== computerSelection) return "tie"
     
+    if(playerSelection==="rock" && computerSelection==="paper" || playerSelection==="paper" && computerSelection==="scissor"|| playerSelection==="scissor" && computerSelection==="rock") {computerScore++ ;return `computer score ${computerScore}`}
+    else if(playerSelection==="rock" && computerSelection==="scissor" || playerSelection==="paper" && computerSelection==="rock"|| playerSelection==="scissor" && computerSelection==="paper"){playerScore++ ;return `player score ${playerScore}`}
+    else if(playerSelection=== computerSelection) return "tie"
+
 }
 
 
@@ -35,7 +21,7 @@ function gameRound(playerSelection,computerSelection){
 
 
 let playerSelection=prompt("enter your selection")
-console.log(`player selection ${playerSelection} `)
+
 let computerSelection=computerPlay()
 
 console.log(gameRound(playerSelection,computerSelection))
