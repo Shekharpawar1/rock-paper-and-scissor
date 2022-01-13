@@ -1,0 +1,54 @@
+body{
+    background: black;
+    color:white;
+}
+h1{
+    text-align: center;
+}
+#selection{
+    display: flex;
+    flex-flow:row wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin: 5rem auto;
+}
+#paperBtn,#rockBtn,#scissorBtn{
+    background:none;
+    outline:none;
+    
+    border:1px solid black;
+    box-shadow: 2px 5px 8px black;
+   
+}
+img{
+    width: 12rem;
+    height: 12rem;
+}
+img:hover{
+    box-shadow: 0px 0px 10px yellow;
+
+
+
+
+
+}
+
+#scoreArea{
+    display: flex;
+    flex-flow: row wrap;
+    margin:10rem;
+    justify-content: space-around;
+    background:gray;
+    border:1px solid black;
+    height: 5rem;
+    text-align: center
+}
+
+
+
+
+
+
+
+
+
