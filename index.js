@@ -21,14 +21,34 @@ if(playerSelection==="rock" && computerSelection==="paper" || playerSelection===
         // let computerScoreoutput=`${computerScore}`;
         
     }
-    gamescore(playerScore,computerScore)
+    
 
 }
-function gamescore(playerScore,computerScore){
-    if(computerScore==="5" || playerScore ==="5"){
-       location.reload()
-    }
+function pageReloading(){
+    setTimeout(() => {
+        location.reload()
+        
+    }, 1000);
+
 }
+function gameScore(playerScore,computerScore){
+    let heading=document.querySelector("h1")
+    if(computerScore===5){
+        heading.innerText="Computer Won";
+        pageReloading()
+        
+    }
+    else if(playerScore ===5){
+        heading.innerText="Player Won";
+        pageReloading()   }
+    else if( playerScore ===5 && computerScore===5){
+        heading.innerText=" Game is Tie";
+        pageReloading()
+    }
+    
+    
+}
+
 
 
 
@@ -36,9 +56,10 @@ let computerSelection=computerPlay();
 
 let selection=document.querySelectorAll("button").forEach((button)=>{
     button.addEventListener("click",(e)=>{
-        let playerSelection=e.target.alt;
-        console.log(playerSelection);
-        console.log(gameRound(playerSelection,computerSelection))
+        let playerSelection=e.target.id;
+        gameRound(playerSelection,computerSelection);
+        gameScore(playerScore,computerScore)
+        console.log(playerSelection,computerSelection)
     })
 })
 

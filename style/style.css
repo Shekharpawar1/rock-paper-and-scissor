@@ -1,6 +1,7 @@
 body{
     background: black;
     color:white;
+    overflow: hidden;
 }
 h1{
     text-align: center;
@@ -8,40 +9,57 @@ h1{
 #selection{
     display: flex;
     flex-flow:row wrap;
-    align-content: center;
     justify-content: space-around;
     margin: 5rem auto;
 }
 #paperBtn,#rockBtn,#scissorBtn{
     background:none;
     outline:none;
-    
     border:1px solid black;
     box-shadow: 2px 5px 8px black;
+    margin-bottom: 2rem;
    
 }
 img{
     width: 12rem;
-    height: 12rem;
+    height: 12rem;  
+    margin-bottom: 2rem;
 }
+
+
+
+
 img:hover{
-    box-shadow: 0px 0px 10px yellow;
 
-
-
-
-
+    box-shadow: 0px 0px 20px yellow;
 }
 
-#scoreArea{
+.scoreArea{
     display: flex;
     flex-flow: row wrap;
-    margin:10rem;
     justify-content: space-around;
-    background:gray;
+    margin:10rem;
+    font-size: 2rem;
     border:1px solid black;
     height: 5rem;
     text-align: center
+}
+#player{
+    position: absolute;
+    top:30rem;
+    left:30rem;
+
+
+}
+#computer{
+    position: absolute;
+    top:30rem;
+    left:60rem;
+}
+#playAgainButton{
+    background:gray;
+    padding:1rem;
+    border-radius: .5rem;
 }
 
 
