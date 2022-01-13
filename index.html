@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
-    Rock Paper Scissor sandbox
 
-    <!-- <div>
-        <p>player Score:<span id="playerScore"></span></p>
+<body>
+    <h1>Rock Paper Scissor</h1>
+
+    <div id="selection">
+        <button id="paperBtn" class="btn"type="button" ><img src="./images/paper.png" alt="paper image" id="paper"></button>
+        <button id="scissorBtn"  class="btn" type="button"><img src="./images/scissor.png" alt="scissor image" id="scissor"></button>
+        
+
+        <button id="rockBtn"class="btn" type="button">
+            <img src="images/rock.png" alt="rock image" id="rock">
+        </button>
+    </div>
+    <div class="scoreArea">
+        <div id="player">
+            <p>
+                Player
+            </p>
+            <span id="playerScore">
+
+            </span>
+        </div>
+        <div id="computer">
+            <p>
+                Computer
+            </p>
+            <span id="computerScore">
+
+            </span>
+        </div>
 
     </div>
-    <div >
-        <p>computer Score:<span id="computerScore"></span></p>
-
-    </div> -->
-    <div id='root'>
-        
+    
+    
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
